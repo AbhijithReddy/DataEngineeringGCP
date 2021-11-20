@@ -44,11 +44,7 @@ gcloud pubsub topics publish sandiego --message "hello again"
 ```
 gcloud pubsub subscriptions pull --auto-ack mySub1
 ```
-> ┌─────────────┬──────────────────┬────────────┐
-  │     DATA    │    MESSAGE_ID    │ ATTRIBUTES │
-  ├─────────────┼──────────────────┼────────────┤
-  │ hello again │ 3414731669901248 │            │
-  └─────────────┴──────────────────┴────────────┘
+![pull-response](pull-response.jpg)
 
 Now we can see the result as the message was published after creating the subscription.
 
